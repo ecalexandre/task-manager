@@ -71,6 +71,7 @@ while program_running:
           else:
                print("Type 'finished viewing' if you're done viewing the list")
      
+     #option 3
      if option_3_choosed:
         print("Choose a task in the list to remove" if len(Task_list)> 0 else "Nothing was added to the list")
         print('')
