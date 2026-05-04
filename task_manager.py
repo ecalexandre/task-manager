@@ -60,7 +60,8 @@ while program_running:
      #option 2
      while option_2_choosed:
           print("Here is your task list:" if len(Task_list) > 0 else "")
-          print(display_list if len(Task_list)> 0 else "Nothing was added here")
+          print('')
+          print(display_list if len(Task_list)> 0 else "Nothing is in the list")
           print("Type 'finished viewing' if you're done viewing the list")
           user_finished_viewing = input()
           if user_finished_viewing == "finished viewing":
@@ -72,6 +73,7 @@ while program_running:
      
      if option_3_choosed:
         print("Choose a task in the list to remove" if len(Task_list)> 0 else "Nothing was added to the list")
+        print('')
         while program_running and option_3_choosed:
               removing_tasks = input("Remove a task (Type 'finished removing' if you're done): ")
               if removing_tasks in Task_list:
