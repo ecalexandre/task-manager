@@ -59,9 +59,10 @@ while program_running:
 
      #option 2
      if option_2_choosed:
+          print("Here is your task list:" if len(Task_list) > 0 else "")
           print(display_list if len(Task_list)> 0 else "Nothing is in the list")
+          print("Type 'finished viewing' if you're done viewing the list")
           while option_2_choosed:
-               print("Here is your task list:" if len(Task_list) > 0 else "")
                user_finished_viewing = input()
                if user_finished_viewing == "finished viewing":
                   option_2_choosed = False
