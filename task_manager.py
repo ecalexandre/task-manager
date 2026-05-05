@@ -58,18 +58,17 @@ while program_running:
                   display_list = Task_list              
 
      #option 2
-     while option_2_choosed:
-          print("Here is your task list:" if len(Task_list) > 0 else "")
-          print('')
+     if option_2_choosed:
           print(display_list if len(Task_list)> 0 else "Nothing is in the list")
-          print("Type 'finished viewing' if you're done viewing the list")
-          user_finished_viewing = input()
-          if user_finished_viewing == "finished viewing":
-               option_2_choosed = False
-               option_not_choosen = True
-               break
-          else:
-               print("Type 'finished viewing' if you're done viewing the list")
+          while option_2_choosed:
+               print("Here is your task list:" if len(Task_list) > 0 else "")
+               user_finished_viewing = input()
+               if user_finished_viewing == "finished viewing":
+                  option_2_choosed = False
+                  option_not_choosen = True
+                  break
+               else:
+                  print("Type 'finished viewing' if you're done viewing the list")
      
      #option 3
      if option_3_choosed:
