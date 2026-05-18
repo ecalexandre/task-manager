@@ -109,4 +109,3 @@ while program_running:
                print("Please enter a valid number")
                option_3_choosed = False
                option_not_choosen = True    
-
